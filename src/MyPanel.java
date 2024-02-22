@@ -86,7 +86,7 @@ public class MyPanel extends JPanel {
 
             case 7:
 
-                outlist.add(new Rectangle(x, y + delta, x, height / 2 - delta));
+                outlist.add(new Rectangle(x, y + delta, x, y+((height / 2) - delta)));
 
                 break;
 
@@ -98,8 +98,6 @@ public class MyPanel extends JPanel {
     public void paintComponent(Graphics g) {
 
         super.paintComponent(g);
-
-
 
 
         g.setColor(Color.BLACK);
