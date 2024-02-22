@@ -56,37 +56,37 @@ public class MyPanel extends JPanel {
 
             case 2:
 
-                outlist.add(new Rectangle(width, y + delta, width, height / 2 - delta));
+                outlist.add(new Rectangle(width, y + delta, width, y+(height / 2) - delta));
 
                 break;
 
             case 3:
 
-                outlist.add(new Rectangle(x + delta, y + height / 2, width - delta, height / 2));
+                outlist.add(new Rectangle(x + delta, y + height / 2, width - delta, y+height / 2));
 
                 break;
 
             case 4:
 
-                outlist.add(new Rectangle(width, y + height / 2 + delta, width, height - delta));
+                outlist.add(new Rectangle(width, y +( height / 2 + delta), width, y+height - delta));
 
                 break;
 
             case 5:
 
-                outlist.add(new Rectangle(x + delta, y + height, width - delta, height));
+                outlist.add(new Rectangle(x + delta, y + height, width - delta, y+height));
 
                 break;
 
             case 6:
 
-                outlist.add(new Rectangle(x, y + height / 2 + delta, x, height - delta));
+                outlist.add(new Rectangle(x, y + (height / 2) + delta, x, y+height - delta));
 
                 break;
 
             case 7:
 
-                outlist.add(new Rectangle(x, y + delta, x, y+((height / 2) - delta)));
+                outlist.add(new Rectangle(x, y + delta, x, y+(height / 2) - delta));
 
                 break;
 
