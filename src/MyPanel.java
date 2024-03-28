@@ -12,12 +12,12 @@ public class MyPanel extends JPanel {
 
     private int y = 100;
 
-    private int width = 200;
+    private int width = 50;
 
-    private int height = 200;
+    private int height = 100;
     private int step = 30;
 
-    private int delta = 3;
+    private int delta = 2;
 
     private ArrayList<Rectangle> outlist = new ArrayList<Rectangle>();
 
@@ -44,37 +44,95 @@ public class MyPanel extends JPanel {
 
                 case "1":
 
-                    segment(2);
+                    segment(2 , false);
 
-                    segment(4);
+                    segment(4, false);
 
                     break;
 
                 case "2":
 
-                    segment(1);
+                    segment(1 , false);
 
-                    segment(2);
+                    segment(2, false);
 
-                    segment(3);
+                    segment(3, false);
 
-                    segment(6);
+                    segment(6, false);
 
-                    segment(5);
+                    segment(5, false);
 
                     break;
 
                 case "3":
 
-                    segment(1);
+                    segment(1, false);
+                    segment(2, false);
+                    segment(3, false);
+                    segment(4, false);
+                    segment(5, false);
 
-                    segment(2);
+                    break;
 
-                    segment(3);
+                case "4":
 
-                    segment(4);
+                    segment(7, false);
+                    segment(2, false);
+                    segment(3, false);
+                    segment(4, false);
 
-                    segment(5);
+                    break;
+
+                case "5":
+
+                    segment(1, false);
+                    segment(7, false);
+                    segment(3, false);
+                    segment(4, false);
+                    segment(5, false);
+
+                    break;
+
+                case "6":
+
+                    segment(7, false);
+                    segment(1, false);
+                    segment(6, false);
+                    segment(5, false);
+                    segment(4, false);
+                    segment(3, false);
+
+                    break;
+
+                case "7":
+
+                    segment(1, false);
+                    segment(2, false);
+                    segment(4, false);
+
+                    break;
+
+
+                case "8":
+
+                    segment(1, false);
+                    segment(2, false);
+                    segment(3, false);
+                    segment(4, false);
+                    segment(5, false);
+                    segment(6, false);
+                    segment(7, false);
+
+                    break;
+
+                case "9":
+
+                    segment(1, false);
+                    segment(2, false);
+                    segment(3, false);
+                    segment(4, false);
+                    segment(5, false);
+                    segment(7, false);
 
                     break;
 
@@ -86,7 +144,7 @@ public class MyPanel extends JPanel {
     }
 
 
-    private void segment(int number) {
+    private void segment(int number ,boolean clear) {
         switch (number) {
             case 1:
                 outlist.add(new Rectangle(x+delta, y, x+width - delta, y));
