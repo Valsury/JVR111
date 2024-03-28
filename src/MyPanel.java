@@ -17,7 +17,7 @@ public class MyPanel extends JPanel {
     private int height = 200;
     private int step = 30;
 
-    private int delta = 10;
+    private int delta = 3;
 
     private ArrayList<Rectangle> outlist = new ArrayList<Rectangle>();
 
@@ -36,7 +36,7 @@ public class MyPanel extends JPanel {
     }
 
 
-    public void setSymbols(String parm) {
+    public  void setSymbols(String parm) {
 
         String[] arr = parm.replace(",", "").split(" ");
         for (String cifra : arr) {
@@ -130,6 +130,41 @@ public class MyPanel extends JPanel {
                 break;
 
         }
+
+    }
+
+
+    public void setX(int x) {
+
+        this.x = x;
+
+    }
+
+
+    public void setY(int y) {
+
+        this.y = y;
+
+    }
+
+
+    public void setWidth(int width) {
+
+        this.width = width;
+
+    }
+
+
+    public void setHeight(int height) {
+
+        this.height = height;
+
+    }
+
+
+    public void setStep(int step) {
+
+        this.step = step;
 
     }
 
