@@ -8,10 +8,11 @@ public class Main {
 
         int[] koords = new int[5];
         JTextField smallField = new JTextField("300, 250, 25, 45, 20");
-        JTextField numbers = new JTextField("0, 1, 2, 3, 4, 5, 6, 7, 8, 9");
+        JTextField numbers = new JTextField("0, 1, 2, 3, 4, 5, 6, 7, 8, 9, а, б, в, г, е, н, о, п, р, с");
         JFrame f = new JFrame("Swing Paint Demo");
+        Button OutputBtn = new Button("Вывод");
         MyPanel myPanel = new MyPanel();
-        numbers.addActionListener(new ActionListener() {
+        OutputBtn.addActionListener(new ActionListener() {
 
             public void actionPerformed(ActionEvent event) {
 
@@ -51,6 +52,7 @@ public class Main {
 
         contents.add(numbers);
         contents.add(smallField);
+        contents.add(OutputBtn);
         f.setContentPane(contents);
 
         myPanel.repaint();

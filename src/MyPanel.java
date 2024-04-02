@@ -136,12 +136,117 @@ public class MyPanel extends JPanel {
 
                     break;
 
+
+
+                case "а":
+
+                    segment(1, false);
+                    segment(2, false);
+                    segment(3, false);
+                    segment(4, false);
+                    segment(6, false);
+                    segment(7, false);
+
+                    break;
+
+                case "б":
+
+                    segment(1, false);
+                    segment(5, false);
+                    segment(3, false);
+                    segment(4, false);
+                    segment(6, false);
+                    segment(7, false);
+
+                    break;
+
+                case "в":
+
+                    segment(1, false);
+                    segment(2, false);
+                    segment(3, false);
+                    segment(4, false);
+                    segment(5, false);
+                    segment(6, false);
+                    segment(7, false);
+
+                    break;
+
+                case "г":
+
+                    segment(1, false);
+                    segment(6, false);
+                    segment(7, false);
+
+                    break;
+
+                case "е":
+
+                    segment(1, false);
+                    segment(3, false);
+                    segment(5, false);
+                    segment(6, false);
+                    segment(7, false);
+
+                    break;
+
+                case "н":
+
+                    segment(2, false);
+                    segment(3, false);
+                    segment(4, false);
+                    segment(6, false);
+                    segment(7, false);
+
+                    break;
+
+                case "о":
+
+                    segment(1, false);
+                    segment(2, false);
+                    segment(4, false);
+                    segment(5, false);
+                    segment(6, false);
+                    segment(7, false);
+
+                    break;
+
+                case "п":
+
+                    segment(1, false);
+                    segment(2, false);
+                    segment(4, false);
+                    segment(6, false);
+                    segment(7, false);
+
+                    break;
+
+                case "р":
+
+                    segment(1, false);
+                    segment(2, false);
+                    segment(3, false);
+                    segment(6, false);
+                    segment(7, false);
+
+                    break;
+
+                case "с":
+
+                    segment(1, false);
+                    segment(5, false);
+                    segment(6, false);
+                    segment(7, false);
+
+                    break;
             }
 
             x = x + step + width;
 
         }
     }
+
+
 
 
     private void segment(int number ,boolean clear) {
